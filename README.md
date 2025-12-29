@@ -2,6 +2,9 @@
 
 > 基于 MS-Agent 架构思想实现的参考系统，用于赛题 3「复杂代码生成 DeepCodeResearch」。
 
+[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
+[![OpenAtom Challenge](https://img.shields.io/badge/OpenAtom-Agent%20Challenge-orange.svg)](https://openatom.tech/agentchallenge)
+
 本项目实现了一个可扩展的 Agent 运行时，支持：
 
 - 多技术文档输入 + 轻量 RAG 检索（PDF / PPTX / DOCX / TXT / MD）
@@ -511,4 +514,36 @@ workspace:
 3. 运行若干示例命令，观察在不同任务下生成的 `outputs/*` 仓库及其测试/静态分析结果。
 
 即可全面评估本系统在赛题 3「复杂代码生成 DeepCodeResearch」中的表现。
+
+---
+
+## 10. 开源许可与致谢
+
+### 许可证
+
+本项目采用 [Apache License 2.0](LICENSE) 开源协议。
+
+```
+Copyright 2025 DeepCodeResearch Contributors
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+```
+
+### OpenAtom 开源基金会
+
+本项目参加 [OpenAtom Agent Challenge](https://openatom.tech/agentchallenge)，致力于推动开源 AI Agent 技术的发展与创新。
+
+### 贡献
+
+欢迎提交 Issue 和 Pull Request 来帮助改进本项目。
 
