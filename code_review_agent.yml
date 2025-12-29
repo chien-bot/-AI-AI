@@ -1,0 +1,37 @@
+# DeepCodeResearch 项目级配置示例
+#
+# 你可以根据企业实际需求，在这里集中管理静态分析、自动修复、
+# 报告输出以及 LLM 模型等行为。文件可安全提交到仓库，便于团队统一规范。
+
+llm:
+  # 可选：覆盖默认的 LLM provider 和模型名称
+  # provider: openai
+  # model: gpt-4.1-mini
+  # api_key: "如果不想用环境变量，也可以在这里写（不推荐提交到仓库）"
+  # base_url: "https://api.openai.com/v1"
+
+static_tools:
+  # 控制是否启用各类静态分析工具（对应 plugins/code_quality.py 暴露的工具）
+  flake8: true
+  pylint: true
+  bandit: true
+  mypy: true
+
+autofix:
+  # 静态分析发现问题后，是否尝试自动修复代码
+  static_issues: true
+  # 单元测试失败时，是否尝试基于测试输出进行自动修复
+  test_failures: true
+
+reports:
+  # 是否生成 JSON 运行报告（用于 CI 集成与审计）
+  enabled: true
+  # 报告输出目录，支持相对路径（相对于 workspace.dir）
+  dir: reports
+
+workspace:
+  # 一般保持默认即可，如需将 memory/、knowledge_base/ 放到固定位置可在此调整
+  # dir: .
+  # memory_dir: memory
+  # kb_dir: knowledge_base
+
